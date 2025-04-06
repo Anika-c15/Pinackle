@@ -17,14 +17,14 @@ export const Explore = ({ state, account }) => {
   };
 
   const dummyPins = [
-    { id: 1, title: "Mountains", image: "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?q=80&w=3284&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-    { id: 2, title: "Ocean", image: "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?q=80&w=3284&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-    { id: 3, title: "Forest", image: "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?q=80&w=3284&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-    { id: 4, title: "City", image: "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?q=80&w=3284&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-    { id: 5, title: "Art", image: "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?q=80&w=3284&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-    { id: 6, title: "Food", image: "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?q=80&w=3284&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-    { id: 7, title: "Travel", image: "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?q=80&w=3284&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-    { id: 8, title: "Design", image: "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?q=80&w=3284&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+    { id: 1, image: "https://i.pinimg.com/736x/c9/b8/19/c9b819d3d8f74767132022eac6201b5a.jpg" },
+    { id: 2, image: "https://i.pinimg.com/474x/a3/73/a7/a373a7c6251ea3ff07c47a05287778ff.jpg" },
+    { id: 3, image: "https://i.pinimg.com/474x/a8/5d/b6/a85db6ce8aea9d0688118b7c4f08c91a.jpg" },
+    { id: 4,  image: "https://i.pinimg.com/736x/66/b1/08/66b1082468790b1a4a345a62538263b5.jpg" },
+    { id: 5,  image: "https://i.pinimg.com/736x/51/35/3c/51353cac082a606c196051b8bb46a025.jpg" },
+    { id: 6, image: "https://i.pinimg.com/474x/f9/d6/f7/f9d6f7aed6693c4cbc95f8ea4e7b33f9.jpg" },
+    { id: 7,  image: "https://i.pinimg.com/474x/08/ec/d4/08ecd4ef29e1bfc7fd0a29e2be5e7fa8.jpg" },
+    { id: 8,  image: "https://i.pinimg.com/474x/da/96/b6/da96b6431f2c25932416cd9c1e918c9b.jpg" },
   ];
 
   const breakpointColumnsObj = {
