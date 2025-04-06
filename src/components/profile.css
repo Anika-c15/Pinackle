@@ -1,0 +1,28 @@
+.MainDiv {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .Name {
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+  
+  .UserName {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .SocialFollowing {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .ProfileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  

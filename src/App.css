@@ -1,0 +1,140 @@
+/* Navbar Styles */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav-brand .logo {
+    height: 32px;
+    width: auto;
+}
+
+.search-container {
+    position: relative;
+    flex: 0 1 50%;
+    max-width: 600px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 12px 45px;
+    border-radius: 25px;
+    border: 2px solid #efefef;
+    background-color: #efefef;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+    background-color: white;
+    border-color: #e60023;
+    outline: none;
+}
+
+/* .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #767676;
+} */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #767676;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link.active {
+    color: #e60023;
+}
+
+.nav-link:hover {
+    color: #e60023;
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.connect-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 24px;
+    background-color: #e60023;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-button:hover {
+    background-color: #ad081b;
+}
+
+.connect-button.connected {
+    background-color: #2ecc71;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    .nav-link span {
+        display: none;
+    }
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+    border-radius: 24px;
+    padding: 8px 16px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .search-icon {
+    color: #767676;
+    margin-right: 10px;
+  }
+  
+  .search-input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
+    color: black; /* Explicitly set text color */
+  }
+  
+  .search-input::placeholder {
+    color: #999;
+  }
