@@ -41,7 +41,7 @@ contract PinNFT is ERC721 {
         pins[newPinId] = Pin({
             id: newPinId,
             creator: msg.sender,
-            contentURI: _contentURI,
+            contentURI: ipfs://${metadataCID},
             createdAt: block.timestamp,
             viewCount: 0,
             likeCount: 0,

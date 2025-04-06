@@ -7,25 +7,25 @@ contract PinMarketplace {
         uint256 price;
         uint256 viewCount;
         uint256 createdAt;
-        string metadataURI;
+        string URI;
     }
     
     mapping(uint256 => Pin) public pins;
     uint256 public pinCount;
     
-    event PinCreated(uint256 pinId, address owner, string metadataURI);
+    event PinCreated(uint256 pinId, address owner, string URI);
     event PinPurchased(uint256 pinId, address newOwner, uint256 price);
     
-    function createPin(string memory _metadataURI, uint256 _initialPrice) public {
+    function createPin(string memory _URI, uint256 _initialPrice) public {
         pinCount++;
         pins[pinCount] = Pin({
             owner: msg.sender,
             price: _initialPrice,
             viewCount: 0,
             createdAt: block.timestamp,
-            metadataURI: _metadataURI
+            URI: _URI
         });
-        emit PinCreated(pinCount, msg.sender, _metadataURI);
+        emit PinCreated(pinCount, msg.sender, _URI);
     }
     
     function purchasePin(uint256 _pinId) public payable {

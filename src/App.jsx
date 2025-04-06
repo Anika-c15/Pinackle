@@ -6,6 +6,7 @@ import  Profile  from './components/Profile'
 import './App.css'
 import abi from "./abis/PinMarket.json"
 import { ethers } from 'ethers'
+import PinUploader from './components/UploadProfile'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     address: '',
     contract: ''
   })
+  const [uploadedPins, setUploadedPins] = useState([]);
   const [account,setAccount]=useState("")
   
   const connectWallet=async()=>{
@@ -56,6 +58,7 @@ function App() {
         <Routes>
           <Route path="/explore" element={<Explore state={state} account={account} />} />
           <Route path="/profile" element={<Profile state={state} account={account} />} />
+          <Route path="/upload" element={<PinUploader />} />
           <Route path="/" element={<Explore state={state} account={account}/>} />
         </Routes>
       </div>

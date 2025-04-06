@@ -38,6 +38,10 @@ export const Navbar = ({ connectWallet, account, state }) => {
 </div>
 
             <div className="nav-links">
+            <Link to="/upload" className={`nav-link ${isActive('/upload')}`}>
+                    <FaCompass className="nav-icon" />
+                    <span>Upload</span>
+                </Link>
                 <Link to="/explore" className={`nav-link ${isActive('/explore')}`}>
                     <FaCompass className="nav-icon" />
                     <span>Explore</span>

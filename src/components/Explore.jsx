@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Masonry from 'react-masonry-css';
 import { AiFillHeart, AiOutlineInfoCircle } from 'react-icons/ai';
-// import uploadFileToPinata from '../utils/uploadToPinata';
+import { uploadFileToPinata } from "../utils/uploadToPinata";
+
 
 export const Explore = ({ state, account }) => {
   const { contract } = state;
